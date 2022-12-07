@@ -8,8 +8,8 @@ import io.cucumber.junit.Cucumber;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(features = "src/test/java/com/maven/feature", glue = "com/maven/stepdef", 
-					monochrome = true, tags = "@E001", dryRun = false,
-					plugin = { "pretty", "html:target/cucumber-reports/cucumberReport" })
+					monochrome = true, tags = "@Regression", dryRun = false,
+					plugin = { "pretty", "html:target/cucumber-reports/cucumberReport.html" })
 
 public class Runner {
 
